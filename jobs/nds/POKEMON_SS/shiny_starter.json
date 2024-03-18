@@ -1,0 +1,115 @@
+{
+  "job_name": "POKEMON_SS_Shiny_starter",
+  "emulator_type": "nds",
+  "rom_file_path": "nds/POKEMON_SS_IPGJ01_00.trim.nds",
+  "actions": [
+    {
+      "action_name": "find_main_window",
+      "action_type": "FindWindow",
+      "target_element": "application",
+      "action_parameters": {
+        "window_name": "POKEMON SS",
+        "dest_name": "main_window"
+      },
+      "then": {
+        "1": [
+          {
+            "action_name": "reset",
+            "action_type": "Reset",
+            "target_element": "menu_bar",
+            "action_parameters": {
+              "wait_seconds": 5
+            }
+          },
+          {
+            "action_name": "a_opening",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "a",
+              "wait_seconds": 3
+            }
+          },
+          {
+            "action_name": "a_title",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "a",
+              "wait_seconds": 3
+            }
+          },
+          {
+            "action_name": "a_select_continue",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "a",
+              "wait_seconds": 3
+            }
+          },
+          {
+            "action_name": "a_check_machine",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "a",
+              "wait_seconds": 3
+            }
+          },
+          {
+            "action_name": "a_talk_professor",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "a",
+              "wait_seconds": 3
+            }
+          },
+          {
+            "action_name": "screenshot1",
+            "action_type": "TakeScreenshot",
+            "target_element": "main_window",
+            "action_parameters": {
+              "screenshot_name": "pk1"
+            }
+          },
+          {
+            "action_name": "left1",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "left",
+              "wait_seconds": 1.0
+            }
+          },
+          {
+            "action_name": "screenshot2",
+            "action_type": "TakeScreenshot",
+            "target_element": "main_window",
+            "action_parameters": {
+              "screenshot_name": "pk2"
+            }
+          },
+          {
+            "action_name": "left2",
+            "action_type": "SendHotControl",
+            "action_parameters": {
+              "key": "left",
+              "wait_seconds": 1.0
+            }
+          },
+          {
+            "action_name": "screenshot3",
+            "action_type": "TakeScreenshot",
+            "target_element": "main_window",
+            "action_parameters": {
+              "screenshot_name": "pk3",
+              "wait_seconds": 1.0
+            }
+          },
+          {
+            "action_name": "save",
+            "action_type": "SaveStateFile",
+            "target_element": "application"
+          }
+        ]
+      },
+      "n_repeats": 10000
+    }
+  ]
+}
