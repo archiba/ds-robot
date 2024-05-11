@@ -6,13 +6,9 @@ name = "pypi"
 [packages]
 pydantic = "*"
 pyautogui = "*"
-atomacos = "*"
-opencv-python = "*"
-scipy = "*"
-matplotlib = "*"
 
 [dev-packages]
 jupyterlab = "*"
 
 [requires]
-python_version = "3.10"
+python_version = "3.12"
